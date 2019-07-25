@@ -32,4 +32,4 @@ To do this for all commits on all branches throughout the repository, add
 
 # SEE ALSO
 
-- https://help.github.com/en/articles/changing-author-info
+- <https://help.github.com/en/articles/changing-author-info>
