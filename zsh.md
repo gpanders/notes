@@ -1,5 +1,3 @@
-% ZSH(um)
-
 # SYNOPSIS
 
 zsh tips and tricks

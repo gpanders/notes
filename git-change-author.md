@@ -1,5 +1,3 @@
-% GIT-CHANGE-AUTHOR(um)
-
 # SYNOPSIS
 
 Change author of git commits in a branch
