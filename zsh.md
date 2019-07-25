@@ -1,8 +1,8 @@
-# SYNOPSIS
+# NAME
 
-zsh tips and tricks
+zsh - the Z shell
 
-# DESCRIPTION
+# EXAMPLES
 
 ## Glob Qualifiers
 
@@ -53,5 +53,6 @@ print -l zsh_demo/data/europe/poland/*.txt([1]:h)
 # Remember you can combine qualifiers and modifiers.
 ```
 
-# REFERENCE
+# SEE ALSO
+
 - https://reasoniamhere.com/2014/01/11/outrageously-useful-tips-to-master-your-z-shell/

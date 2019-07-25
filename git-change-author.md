@@ -30,6 +30,6 @@ fi
 To do this for all commits on all branches throughout the repository, add
 `--tag-name-filter cat -- --branches --tags` to the end of the command.
 
-# REFERENCE
+# SEE ALSO
 
 - https://help.github.com/en/articles/changing-author-info
