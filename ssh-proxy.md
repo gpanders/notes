@@ -11,7 +11,7 @@ following command:
 
 The `-D` flag creates a "dynamic port forward" on port 8080 of the host machine
 that forwards all traffic to `proxy.myserver.com`. The `-N` flag tells ssh that
-we don't need stdin (we are not running any commands, we just want to keep the
+we don't need _stdin_ (we are not running any commands, we just want to keep the
 connection open).
 
 You can also add the `-C` flag to compress data, the `-q` flag to "quiet" the
