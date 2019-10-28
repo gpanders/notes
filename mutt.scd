@@ -6,14 +6,14 @@ mutt - cheat sheet for mutt
 
 # DATE RANGE SYNTAX
 
-Absolute dates
-	_\[DD/MM/YY\]-DD/MM/YY_ (month and year are optional, defaulting to the
+*Absolute dates*
+	_[DD/MM/YY\]-DD/MM/YY_ (month and year are optional, defaulting to the
 	current month and year). If you omit the first date, all messages _before_
 	the given date will be selected.
 
-Relative dates
-	Can be specified as _\>offset_ for messages older than _offset_ units,
-	_\<offset_ for messages newer than _offset_ units, or _=offset_ for
+*Relative dates*
+	Can be specified as _>offset_ for messages older than _offset_ units,
+	_<offset_ for messages newer than _offset_ units, or _=offset_ for
 	messages exactly _offset_ units old.
 
 _offset_ is specified as a positive number with one of the units from the below

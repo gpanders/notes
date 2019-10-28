@@ -1,13 +1,15 @@
+git-change-author(1)
+
 # SYNOPSIS
 
 Change author of git commits in a branch
 
 # DESCRIPTION
 
-The following will change all commits with author email `wrong@example.com` to
-`correct@example.com` on the current branch.
+The following will change all commits with author email _wrong@example.com_ to
+_correct@example.com_ on the current branch.
 
-```console
+```
 $ git filter-branch --env-filter '
 WRONG_EMAIL="wrong@example.com"
 NEW_NAME="New Name"
@@ -28,8 +30,8 @@ fi
 ```
 
 To do this for all commits on all branches throughout the repository, add
-`--tag-name-filter cat -- --branches --tags` to the end of the command.
+_--tag-name-filter cat -- --branches --tags_ to the end of the command.
 
-# SEE ALSO
+# REFERENCE
 
-- <https://help.github.com/en/articles/changing-author-info>
+- https://help.github.com/en/articles/changing-author-info
