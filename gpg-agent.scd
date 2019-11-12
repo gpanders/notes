@@ -1,4 +1,4 @@
-gpg-agent(1)
+gpg-agent(1) "" "ual"
 
 # NAME
 

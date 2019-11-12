@@ -1,4 +1,4 @@
-awk(1)
+awk(1) "" "ual"
 
 # NAME
 

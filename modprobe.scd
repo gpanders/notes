@@ -1,4 +1,4 @@
-modprobe(1)
+modprobe(1) "" "ual"
 
 # NAME
 

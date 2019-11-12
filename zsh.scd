@@ -1,4 +1,4 @@
-zsh(1)
+zsh(1) "" "ual"
 
 # NAME
 

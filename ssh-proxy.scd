@@ -1,4 +1,4 @@
-ssh-proxy(1)
+ssh-proxy(1) "" "ual"
 
 # NAME
 
