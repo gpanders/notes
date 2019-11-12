@@ -76,3 +76,6 @@ $ fc-match monospace
 FiraMono-Medium.otf: "Fira Mono" "Medium"
 ```
 
+# REFERENCES
+
+- https://www.freedesktop.org/software/fontconfig/fontconfig-user.html
