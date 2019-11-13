@@ -6,13 +6,27 @@ fonts - configuring fonts using fontconfig
 
 # CHANGING DEFAULT FONTS
 
-To replace the default monospace font with Fira Mono, create a file at
-*~/.config/fontconfig/fonts.conf* with the following contents:
+To change the default monospace font to, for example, Fira Mono, create a file
+at *~/.config/fontconfig/fonts.conf* with the following contents:
+
+```
+<alias>
+  <family>monospace</family>
+  <prefer>
+    <family>Fira Mono</family>
+  </prefer>
+</alias>
+```
+
+Some fonts, such as Fira Mono, do not have an italic style. In those cases, we
+can specify to use Fira Mono for the regular and bold styles, but use a
+different font, such as Hack, for italic styles:
 
 ```
 <?xml version="1.0"?>
 <!DOCTYPE fontconfig SYSTEM "fonts.dtd">
 <fontconfig>
+  <!-- Match bold monospace -->
   <match target="pattern">
     <test name="family">
       <string>monospace</string>
@@ -24,6 +38,7 @@ To replace the default monospace font with Fira Mono, create a file at
       <string>Fira Mono</string>
     </edit>
   </match>
+  <!-- Match italic monospace -->
   <match target="pattern">
     <test name="family">
       <string>monospace</string>
@@ -35,6 +50,7 @@ To replace the default monospace font with Fira Mono, create a file at
       <string>Hack</string>
     </edit>
   </match>
+  <!-- Match all other monospace styles -->
   <match target="pattern">
     <test name="family">
       <string>monospace</string>
@@ -42,6 +58,7 @@ To replace the default monospace font with Fira Mono, create a file at
     <edit name="family" mode="assign" binding="same">
       <string>Fira Mono</string>
     </edit>
+    <!-- This tag can be omitted to just use the "Regular" style -->
     <edit name="style" mode="prepend" binding="same">
       <string>Medium</string>
     </edit>
@@ -49,22 +66,9 @@ To replace the default monospace font with Fira Mono, create a file at
 </fontconfig>
 ```
 
-In the above example, we use Hack for the italic font since Fira Mono does not
-provide its own italic variant. If we were using a font that _did_ provide its
-own italic variant (such as Hack), then *fonts.conf* could simply contain
-
-```
-<alias>
-  <family>monospace</family>
-  <prefer>
-    <family>Hack</family>
-  </prefer>
-</alias>
-```
-
-Note that in the above case, the *fonts.conf* file does not contain the XML
-header or the parent _<fontconfig>_ tag. These can be omitted when there is only
-a single top-level entry in the *fonts.conf* file.
+Note that in the above case, the *fonts.conf* file contains the XML header and
+the parent _<fontconfig>_ tag. These can be omitted when there is only a single
+top-level entry in the *fonts.conf* file (as in the first example).
 
 # TESTING A FONT NAME
 
