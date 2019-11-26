@@ -1,5 +1,3 @@
-awk(1) "" "ual"
-
 # NAME
 
 awk

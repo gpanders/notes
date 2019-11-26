@@ -1,5 +1,3 @@
-modprobe(1) "" "ual"
-
 # NAME
 
 modprobe - Add and remove modules from the Linux Kernel
@@ -8,9 +6,9 @@ modprobe - Add and remove modules from the Linux Kernel
 
 ## Adding in-tree kernel modules
 
-The following demonstrates how to add a module found under _drivers/usb/serial_.
+The following demonstrates how to add a module found under `drivers/usb/serial`.
 
-```
+```console
 cd /path/to/linux/source/tree
 cd drivers/usb/serial
 make -C /lib/modules/_uname -r_/build M=$(pwd)

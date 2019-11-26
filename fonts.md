@@ -1,5 +1,3 @@
-fonts(1) "" "ual"
-
 # NAME
 
 fonts - configuring fonts using fontconfig
@@ -7,9 +5,9 @@ fonts - configuring fonts using fontconfig
 # CHANGING DEFAULT FONTS
 
 To change the default monospace font to, for example, Fira Mono, create a file
-at *~/.config/fontconfig/fonts.conf* with the following contents:
+at **~/.config/fontconfig/fonts.conf** with the following contents:
 
-```
+```xml
 <alias>
   <family>monospace</family>
   <prefer>
@@ -22,7 +20,7 @@ Some fonts, such as Fira Mono, do not have an italic style. In those cases, we
 can specify to use Fira Mono for the regular and bold styles, but use a
 different font, such as Hack, for italic styles:
 
-```
+```xml
 <?xml version="1.0"?>
 <!DOCTYPE fontconfig SYSTEM "fonts.dtd">
 <fontconfig>
@@ -66,16 +64,16 @@ different font, such as Hack, for italic styles:
 </fontconfig>
 ```
 
-Note that in the above case, the *fonts.conf* file contains the XML header and
-the parent _<fontconfig>_ tag. These can be omitted when there is only a single
-top-level entry in the *fonts.conf* file (as in the first example).
+Note that in the above case, the **fonts.conf** file contains the XML header and
+the parent `<fontconfig>` tag. These can be omitted when there is only a single
+top-level entry in the **fonts.conf** file (as in the first example).
 
 # TESTING A FONT NAME
 
-You can see how *fontconfig* resolves a particular font using the _fc-match_
+You can see how **fontconfig** resolves a particular font using the `fc-match`
 tool:
 
-```
+```console
 $ fc-match monospace
 FiraMono-Medium.otf: "Fira Mono" "Medium"
 ```

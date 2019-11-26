@@ -1,5 +1,3 @@
-zsh(1) "" "ual"
-
 # NAME
 
 zsh - the Z shell
@@ -52,7 +50,7 @@ A plain old glob
 print -l zsh_demo/data/europe/poland/*.txt
 ```
 
-Return just the file name (like _basename_(1))
+Return just the file name (like **basename**(1))
 
 ```
 print -l zsh_demo/data/europe/poland/*.txt(:t)
@@ -70,7 +68,7 @@ Return the extension
 print -l zsh_demo/data/europe/poland/*.txt(:e)
 ```
 
-Return the parent folder of the file (like _dirname_(1))
+Return the parent folder of the file (like **dirname**(1))
 
 ```
 print -l zsh_demo/data/europe/poland/*.txt(:h)
