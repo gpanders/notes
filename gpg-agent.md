@@ -18,6 +18,5 @@ max-cache-ttl N
 
 Normally you don't need to restart `gpg-agent` because `gpg` and other tools
 that use it do all that for you. But if you do, you can use
-```
-gpgconf --kill gpg-agent
-```
+
+    gpgconf --kill gpg-agent

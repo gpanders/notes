@@ -12,9 +12,7 @@ a company proxy), it must be appended/added to each of these locations:
 
 Add certificate to `/usr/local/etc/openssl/certs/` and run
 
-```
-/usr/local/opt/openssl/bin/c_rehash
-```
+    /usr/local/opt/openssl/bin/c_rehash
 
 Likewise for `openssl@1.1`.
 
@@ -31,15 +29,11 @@ To find the location of this CA file, run `python -m certifi` using the Python
 executable shipped with the Homebrew package. For example, using the `buku`
 package:
 
-```
-/usr/local/Cellar/buku/<version>/libexec/bin/python -m certifi
-```
+    /usr/local/Cellar/buku/<version>/libexec/bin/python -m certifi
 
 yields
 
-```
-/usr/local/Cellar/buku/<version>/libexec/lib/python3.7/site-packages/certifi/cacert.pem
-```
+    /usr/local/Cellar/buku/<version>/libexec/lib/python3.7/site-packages/certifi/cacert.pem
 
 ## Homebrew
 
@@ -47,12 +41,8 @@ Depending on the version of Ruby that Homebrew uses this may or not be
 necessary. Run `brew config` and check the value of **Homebrew Ruby**. For
 example, if you see
 
-```
-Homebrew Ruby: 2.6.3 => /usr/local/Homebrew/Library/Homebrew/vendor/portable-ruby/2.6.3/bin/ruby
-```
+    Homebrew Ruby: 2.6.3 => /usr/local/Homebrew/Library/Homebrew/vendor/portable-ruby/2.6.3/bin/ruby
 
 then the `cert.pem` file can be found at
 
-```
-/usr/local/Homebrew/Library/Homebrew/vendor/portable-ruby/2.6.3/libexec/cert.pem
-```
+    /usr/local/Homebrew/Library/Homebrew/vendor/portable-ruby/2.6.3/libexec/cert.pem
